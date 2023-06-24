@@ -1,0 +1,294 @@
+
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+body{
+    font-size: 16px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: auto;
+}
+
+.hamb{
+   display: none;
+}
+
+.boton {
+    background-color: #8B48BF;
+    color: #FFF;
+    font-size: 13px;
+    padding: 16px 45px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.25)
+}
+.boton:hover{
+   background-color: rgba(139, 72, 191, 0.7);
+}
+.ctn{
+   width: 80%;
+   margin: auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 0;
+}
+.list {
+    display: flex;
+    list-style: none;
+}
+.list li{
+    margin: 0 8px;
+    font-size: 13px;
+    color: #242E52;
+    cursor: pointer;
+}
+.list li:hover{
+    color: rgba(36, 46, 82, 0.6);
+}
+
+.first-img-text{
+    display: flex;
+    text-align: right;
+    margin: auto;
+    width: 80%;
+    padding-bottom: 5%;
+}
+.first-img-text .textos h1{
+    color: #232C50;
+    font-size: 50px;
+    margin: 30px;
+}
+.first-img-text .textos p{
+    padding: 0 0 36px 62px;
+    font-weight: 500;
+    line-height: 1.5;
+    
+}
+.div-section{
+    background-color: #8B48BF;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    padding: 0 100px;
+    margin: auto;
+}
+.div-section .column{
+    width: 50%;
+    margin: 30px;
+    line-height: 1.5;
+}
+.div-section h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+/*----Articulos----*/
+.articles{
+   padding: 50px 0;
+   display: flex;
+   justify-content: center;
+   background-color: rgb(249, 249, 249);
+   width: 100%;
+   margin: auto;
+   margin-bottom: 100px;
+}
+.article-q{
+   display: flex;
+}
+article div h3, article div p{
+   margin: 0 0 10px 10px;
+}
+article div p{
+   color: #B3B2B7;
+   line-height: 1.4;
+}
+
+.articles article span{
+    background-color: #8B48BF;
+    color: #FFF;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-radius: 30px;
+
+}
+/*-------- Mejores del mes----*/
+  .title-2 h2{
+  text-align: center;
+  color: #242E53;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.best-month{
+   display: flex;
+   justify-content: center;
+   background-color: rgb(249, 249, 249);
+   width: 80%;
+   margin: auto;
+   text-align: center;
+}
+.best-month article{
+   padding: 30px;
+}
+
+.best-month article h3{
+   color: #242E53;
+   margin: 40px 0;
+}
+.best-month article p{
+   color: #B3B2B7;
+   line-height: 1.4;
+}
+.more{
+   text-align: center;
+   margin: 50px 0;
+}
+.btn-white{
+   background-color: #fff;
+    color: #8B48BF;
+    font-size: 13px;
+    padding: 16px 10%;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.25)
+}
+.btn-white:hover{
+   color: #fff;
+   background-color:#B3B2B7 ;
+}
+.end{
+   display: flex;
+   justify-content: space-between;
+   margin: auto;
+}
+.end .column span{
+   margin-left: 60%;
+}
+footer{
+   background-color: #1E1E26;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   color: #fff;
+   padding: 5% ;
+   text-align: justify;
+ ;
+}
+footer ul li{
+   list-style: none;
+   line-height: 2.5;
+}
+.logo{
+   padding-bottom: 70px;
+}
+.ico{
+   padding-left: 10px;
+}
+footer div form input{
+   border-radius: 50px;
+   padding: 15px;
+   border: none;
+}
+footer div form button{
+   padding: 15px;
+   color: #fff;
+   background-color: #8B48BF;
+   border: none;
+   border-radius: 40px;
+   width: 70px;
+}
+footer div form button:hover{
+   background-color: rgba(139, 72, 191, 0.7)
+}
+
+
+/*----Media queries---*/
+
+@media (max-width:980px){
+.list{
+   display: none;
+}
+
+.hamb{
+   display: block;
+   width: 40px;
+}
+a.boton{
+   display: none;
+}
+
+.first-img-text{
+   display: block;
+}
+.first-img-text .textos h1{
+   font-size: 38px;
+}
+.div-section{
+   padding: 20px 40px;
+}
+.div-section h2{
+   font-size: 28px;
+}
+.articles{
+width: 90%;
+ display: inline-block
+}
+.article-q{
+   display: block;
+   
+}
+.article-q div span{
+   position: absolute;
+   padding: 5px 15px ;
+   margin-bottom: 20px;
+
+}
+.article-q:nth-last-child(1) h3{
+   background-color:rgba(139, 72, 191, 0.3) ;
+}
+.article-q div h3{
+   position: relative;
+   margin: 0 80px 30px 80px;
+   
+}
+.article-q p{
+   margin-bottom: 20px;
+   width: 90%;
+}
+.best-month article:nth-child(1), .best-month article:nth-child(3){
+   display: none;
+}
+.btn-white{
+   margin: 0;
+}
+
+footer{
+   display: flex;
+   flex-direction: column-reverse;
+}
+}
+@media (max-width:720px){
+   
+   .div-section{
+      text-align: center;
+      display: block;
+      width: 100%;
+      background-color: #3CDDF3;
+   }
+   .div-section h2{
+      font-size: 26px;
+  }
+  .btn-white{
+   background-color: #232C50;
+   color: #fff;
+   margin:  5% 0;
+
+  }
+  div section .end{
+   padding: 0;
+  }
+}
